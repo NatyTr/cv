@@ -45,6 +45,7 @@ header a:hover {
   
 }
 
+
 .name {
     margin: 0px;
     font-size: 26px;
@@ -66,14 +67,17 @@ margin-top: 35px;
 
 
 .omnetext {
-  width: 500px;
-  margin-left: 20%;
-  line-height: 1.6;
+width: 500px;
+margin-left: 20%;
+line-height: 1.6;
 }
 
 .studium {
-width: 100%;
-margin-top: 40px;
+  width: 100%;
+  margin-top: 40px;
+  display: flex; 
+  max-width: 1000px; 
+  margin: auto;
 }
 
 .studium2 { 
@@ -99,16 +103,16 @@ margin-top: 40px;
 }
 
 .praca {
-  width: 100%;
-  margin-top: 20px;
-  padding-top:10px;
-  padding-bottom:20px;
-  background-color: #01657d;
-  color: white;
+width: 100%;
+margin-top: 20px;
+padding-top:10px;
+padding-bottom:20px;
+background-color: #01657d;
+color: white;
 }
 
 .praca h5 {
-    line-height: 1px;
+line-height: 1px;
 }
 
 .praca p {
@@ -144,10 +148,10 @@ margin-top: 40px;
 }
 
 .box_item {
-    background-repeat: no-repeat;
-    color: black; 
-    background-position: center;
-    background-size:cover;
+background-repeat: no-repeat;
+color: black; 
+background-position: center;
+background-size:cover;
 
 }
 
@@ -176,11 +180,62 @@ margin-top: 40px;
     padding:0px;
 }
 
+/*
+.container {
+width: 80%;
+margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.cell {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.cell-1 {
+  background: #f3acae;
+}
+.cell-2 {
+  background: #da8d95;
+}
+.cell-3 {
+  background: #c07180;
+}
+.cell-4 {
+  background: #a7586d;
+}
+.cell-5 {
+  background: #8e425c;
+}
+.cell-6 {
+  background: #742f4c;
+}
+.cell-7 {
+  background: #f3acae;
+}
+.cell-8 {
+  background: #da8d95;
+}
+.cell-9 {
+  background: #c07180;
+}
+.cell-10 {
+  background: #a7586d;
+}
+.cell-11 {
+  background: #8e425c;
+}
+.cell-12 {
+  background: #742f4c;
+}
+*/
 
 .container {
-  border: 2px solid  #01657d;
-  width: 80%;
-  margin: auto;
+border: 2px solid  #01657d;
+width: 80%;
+margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -211,6 +266,11 @@ padding-right:100px;
 margin: 0 20;
 }
 
+.certifikaty_items {
+display:flex; 
+margin-left:auto;
+}
+
 .certifikaty_ostatne h4 {
 text-align:center;
 }
@@ -223,10 +283,28 @@ border: 1px solid #feb500;
 margin: auto;
 }
 
+.certifikaty a {
+text-decoration-line: none;
+color: black;
+}
+
 
 footer {
     background-color: #e6b5b8;
 }
+
+.footer_main {
+display:flex; 
+margin:auto; 
+width:60%; 
+justify-content: space-between;
+}
+
+.footer_menu {
+font-weight:bold;
+color:black;
+}
+
 
 
 footer a {
@@ -252,3 +330,119 @@ text-decoration: none;
 }
 
 
+
+@media only screen and (max-width: 768px) { 
+
+    .certifikaty {
+      display:block; 
+   
+  }
+
+  .certifikaty_items {
+      display:block;
+    text-align:center;
+  }
+  
+  .certifikaty_nadpis {
+    padding-right: 0px;
+}
+
+    .certifikaty button {
+    width: maxcontent;
+    }
+
+    .kocka2 {
+    width: 250px;
+    }
+    
+    .swiper-button-prev {
+    display: none;
+    }
+    
+    .swiper-button-next {
+    display:none;
+    }
+    
+   .omne {
+    display:block;
+    margin: 0px;
+    }
+    
+    .omne img {
+       width: 100%;
+    object-fit: cover;
+    height: 300px;
+    object-position: center;
+    }
+    
+    .omnetext {
+    width: 90%;
+    margin: auto;
+    }
+    
+    .omnetext h2 {
+    text-align: center;
+    }
+    
+    .studium {
+    display: block;
+    }
+    
+    .circle {
+    margin-top: 40px;
+    }
+    
+    .container {
+        display: block;
+    }
+    
+    .box_item: {
+    height:150px;
+    }
+    
+    .box_item:hover {
+    height: 130px;
+    }
+    
+    .box_item:hover:after {
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 28%;
+    padding: 0px 10px;
+    }
+    
+    .footer_main {
+    display: block;
+    margin: auto;
+    width: 90%;
+    }
+    
+    .footer_menu {
+    display: none;
+    }
+    
+    .footer_contact {
+    padding-top: 15px;
+    text-align: center;
+    }
+    
+    .footer_logos {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 15px;
+    }
+    
+    header {
+    display: none;
+    }
+    
+    .swiper-button-prev:after {
+    display: none;
+    }
+    
+    .swiper-button-next:after {
+    display: none;
+    }
+    
+  }

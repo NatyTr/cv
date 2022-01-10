@@ -14,7 +14,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+<!--- toto tu musí byť ? ešte viac mi to rozbilo mobilnú verziu!!!!---->
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -37,6 +37,7 @@
         </div>
         <div class="omnetext">
           <h2><b>Niečo o mne</b></h2>
+          <h5>Túto web stránku som vytvorila ako ukážku a pri tvorbe som nepoužila šablónu ale vlastné CSS a HTML. Pre slider som si pomohla knižnicu Swiper.js. Kód k tejto stránke nájdete aj na mojom <a href="https://github.com/NatyTr" target="_blank">GitHube</a>.</h5>
           <p>Ahojte! Moje meno je Natália Truchlíková. Pôvodne pochádzam z Kysúc – konkrétne z Čierneho pri Čadci,
            no už od vysokej školy bývam v Bratislave. Študovala som na Ekonomickej Univerzite, kde som nadobudla tituly
             z účtovníctva a štatistiky. Po škole som sa zamestnala v ČSOB banke, v ktorej som pôsobila 2,5 roka ako Špecialista 
@@ -48,9 +49,9 @@
 
 
 
-    <div id="vzdelanie" class="vzdelanie">
+    <div id="vzdelanie">
         <h2 style="text-align:center; padding-top: 10px;">Vzdelanie</h2>
-        <div  style="display: flex; max-width: 1000px; margin: auto;">
+        <div class="studium">
             <div class="studium2">
                 <h4 style="background-color: #f9d6d4;" class="circle">SŠ</h4>
                 <h4>Obchodná akadémia Čadca</h4>
@@ -148,6 +149,8 @@
     </div>
 
 
+
+
 <div id="kurz" class="certifikaty">
     <div class="certifikaty_nadpis">
       <h2>Kurzy a certifikáty</h2>
@@ -155,18 +158,18 @@
       ktorých som nadobudla základné skúsenosti s CSS, JavaScriptom a HTML. 
        </p>
     </div>
-    <div style="display:flex; margin-left:auto;"" >
+    <div class="certifikaty_items" >
       <div class="certifikaty_ostatne">
         <h4>Learn CSS</h4>
-        <button type="button">Zobraziť certifikát</button>
+        <button type="button"><a href="/images/css.pdf" target="_blank">Zobraziť certifikát</a></button>
       </div>
       <div  class="certifikaty_ostatne">
         <h4>Learn HTML</h4>
-        <button type="button">Zobraziť certifikát</button>
+        <button type="button"><a href="/images/html.pdf" target="_blank">Zobraziť certifikát</a></button>
       </div>
       <div  class="certifikaty_ostatne">
         <h4>Learn JavaScript</h4>
-        <button type="button">Zobraziť certifikát</button>
+        <button type="button"><a href="/images/js.pdf" target="_blank">Zobraziť certifikát</a></button>
         <p></p>
       </div>
     </div>
@@ -289,8 +292,8 @@
 </div>   
     
 <footer>
-    <div style="display:flex; margin:auto; width:60%; justify-content: space-between;" >
-      <div style="font-weight:bold; color:black;">
+    <div class="footer_main" >
+      <div class="footer_menu">
         <h4>Menu</h4>
         <p><a href="#omne">O Mne</a></p>
         <p><a href="#vzdelanie">Vzdelanie</a></p>
@@ -298,22 +301,22 @@
         <p><a href="#kurz">Kurzy</a></p>
         <p><a href="#znalosti">Znalosti</a></p>
       </div> 
-      <div>
+      <div class="footer_contact">
           <h4>Kontaktné informácie</h4>
           <p><b>Adresa:</b> Hollého 13, 811 08 Bratislava</p>
           <p><b>Telefónne číslo:</b> 0950 780 730</p>
           <p><b>E-mail:</b> n.truchlikova@gmail.com</p>
       </div>
       <div class="footer_logos">
-            <h4 style="text-align:center;">Sociálne siete</h4>            
-            <a href="https://www.facebook.com/natalia.truchlikova" 
-            class="fa fa-facebook" target="_blank"></a>
-            <a href="https://www.facebook.com/natalia.truchlikova" 
-            class="fa fa-github" target="_blank"></a>
-            <a href="https://www.linkedin.com/in/nat%C3%A1lia-truchl%C3%ADkov%C3%A1-aa9307188/"
-             class="fa fa-linkedin" target="_blank"></a>
-            <a href="https://www.instagram.com/naty.truchlikova/" 
-            class="fa fa-instagram" target="_blank" ></a>     
+            <h4 style="text-align:center;">Sociálne siete</h4>
+            <div>            
+              <a href="https://github.com/NatyTr" 
+              class="fa fa-github" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/nat%C3%A1lia-truchl%C3%ADkov%C3%A1-aa9307188/"
+               class="fa fa-linkedin" target="_blank"></a>
+              <a href="https://www.instagram.com/naty.truchlikova/" 
+              class="fa fa-instagram" target="_blank" ></a>     
+            </div>
         </div>
       </div>
 </footer>
